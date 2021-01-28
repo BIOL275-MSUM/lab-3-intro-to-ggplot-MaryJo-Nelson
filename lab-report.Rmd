@@ -90,6 +90,8 @@ Mode.
 
 I read the data using the code provided by the instructor. The dataset is from the auk package and was originally named ebird_taxonomy. I converted it to a tibble, removed non-species taxa, and named the new dataset birds.
 
+## Load package, convert/filter bird data
+
 ```{r}
 library(auk)                          # load the auk package
 birds <- ebird_taxonomy %>%           # start with the ebird_taxonomy data

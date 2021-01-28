@@ -116,6 +116,8 @@ is from the auk package and was originally named ebird\_taxonomy. I
 converted it to a tibble, removed non-species taxa, and named the new
 dataset birds.
 
+## Load package, convert/filter bird data
+
 ``` r
 library(auk)                          # load the auk package
 ```
