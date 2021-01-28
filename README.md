@@ -3,9 +3,7 @@ Lab 3: Introduction to ggplot
 MaryJo Nelson
 2021-01-28
 
-> INSTRUCTIONS: REMOVE THIS LINE AND REPLACE \_\_\_\_ WITH YOUR OWN TEXT
-
-Welcome to my Lab 2 repository for Quantitative Biology BIOL 275 at
+Welcome to my Lab 3 repository for Quantitative Biology BIOL 275 at
 MSUM.
 
 ## Lab objectives
@@ -38,7 +36,7 @@ The objectives of this lab are:
 
 -   Set the image width for an R Markdown code chunk
 
-Repository contents
+## Repository contents
 
 The repository contains the following scripts:
 

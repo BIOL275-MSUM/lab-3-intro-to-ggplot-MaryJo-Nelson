@@ -8,13 +8,13 @@ section of Lab Assignment 3 Introduction to
 ggplot2](https://biol275-msum.github.io/introduction-to-ggplot2.html#your-assignment)
 on the lab website.
 
-## Fireflies
+# Fireflies
 
 > A. Insert an R code chunk and create a graph depicting the frequency
 > distribution of the 35 mass measurements. It should have legible text
 > and appropriate axis labels.
 
-# Load Packages
+## Load Packages
 
 ``` r
 library(tidyverse)
@@ -31,7 +31,7 @@ library(tidyverse)
     ## x dplyr::filter() masks stats::filter()
     ## x dplyr::lag()    masks stats::lag()
 
-# Load and Read Firefly Data
+## Load and Read Firefly Data
 
 ``` r
 firefly_data <- read_csv("https://whitlockschluter.zoology.ubc.ca/wp-content/data/chapter02/chap02q19FireflySpermatophoreMass.csv") 
@@ -62,45 +62,7 @@ firefly_data
     ## 10             0.07 
     ## # … with 25 more rows
 
-``` r
-distinct(firefly_data, spermatophoreMass)
-```
-
-    ## # A tibble: 26 x 1
-    ##    spermatophoreMass
-    ##                <dbl>
-    ##  1             0.047
-    ##  2             0.037
-    ##  3             0.041
-    ##  4             0.045
-    ##  5             0.039
-    ##  6             0.064
-    ##  7             0.065
-    ##  8             0.079
-    ##  9             0.07 
-    ## 10             0.066
-    ## # … with 16 more rows
-
-``` r
-count(firefly_data, spermatophoreMass)
-```
-
-    ## # A tibble: 26 x 2
-    ##    spermatophoreMass     n
-    ##                <dbl> <int>
-    ##  1             0.037     1
-    ##  2             0.039     1
-    ##  3             0.041     1
-    ##  4             0.045     1
-    ##  5             0.046     1
-    ##  6             0.047     1
-    ##  7             0.048     2
-    ##  8             0.055     1
-    ##  9             0.056     1
-    ## 10             0.059     1
-    ## # … with 16 more rows
-
-# Histogram of firefly spermatophore mass measurements
+## Histogram of firefly spermatophore mass measurements
 
 ``` r
 ggplot(data = firefly_data) +
@@ -122,7 +84,7 @@ ggplot(data = firefly_data) +
 
 ![](lab-report_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
-\_\_\_
+## Questions about firefly data
 
 > B. What type of graph did you choose in part (A)? Why?
 
@@ -132,8 +94,6 @@ ggplot(data = firefly_data) +
     numererical data, whereas bar graphs are better for showing the frequency 
     distribution of categorical data.
 
-\_\_\_
-
 > C. Describe the shape of the frequency distribution. What are its main
 > features?
 
@@ -142,8 +102,6 @@ ggplot(data = firefly_data) +
     bell-shaped clump of data between 0.03mg and 0.10mg, with an additional 
     outlier at 0.17mg-0.18mg.
 
-\_\_\_
-
 > D. What term would be used to describe the largest measurement in the
 > frequency distribution? You can refer to the lecture slides, your
 > notes, or the textbook.
@@ -151,9 +109,7 @@ ggplot(data = firefly_data) +
 
     Mode.
 
-\_\_\_
-
-## Bird orders
+# Bird orders
 
 I read the data using the code provided by the instructor. The dataset
 is from the auk package and was originally named ebird\_taxonomy. I
@@ -174,7 +130,7 @@ birds <- ebird_taxonomy %>%           # start with the ebird_taxonomy data
   filter(category == "species")       # remove non-species taxa
 ```
 
-# Read bird data
+## Read bird data
 
 ``` r
 birds
@@ -234,6 +190,8 @@ count(birds, order)
     ## 10 Ciconiiformes       19
     ## # … with 31 more rows
 
+## Questions about bird data
+
 > E. How many bird species are in the new birds dataset? How did you
 > find out?
 
@@ -241,8 +199,6 @@ count(birds, order)
     There are 10,721 bird species in the dataset. I found this by creating a table of 
     distinct scientific names and there were a total of 10,721 rows, telling me that
     that is how many bird species there are.
-
-\_\_\_
 
 > H. How many orders are there? You can get this right by counting on
 > the graph, but you will only get full points if you use some code to
@@ -252,7 +208,7 @@ count(birds, order)
     There are 41 orders. I found this by creating a contingency table of the orders and
     their frequency. There were 41 rows, telling me that there are 41 distinct orders.
 
-\_\_\_
+## Bird Order Bar Graph
 
 > F. Insert an R code chunk and create a graph depicting the
 > distribution of orders in the birds dataset. Sort the orders with the
@@ -278,8 +234,6 @@ ggplot(data = birds) +
 
 ![](lab-report_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
-\_\_\_
-
 > G. What kind of graph did you create? Why?
 
 
@@ -291,10 +245,10 @@ ggplot(data = birds) +
 ## Links to peer review
 
 I reviewed Beau Ayers’s lab report at this URL:
-<https://github.com/BIOL275-MSUM/lab-3-intro-to-ggplot-BeauAyers>
+<https://github.com/BIOL275-MSUM/lab-3-intro-to-ggplot-BeauAyers/issues/1>
 
 Beau Ayers reviewed my lab report at this URL:
-<https://github.com/BIOL275-MSUM/lab-3-intro-to-ggplot-MaryJo-Nelson>
+<https://github.com/BIOL275-MSUM/lab-3-intro-to-ggplot-MaryJo-Nelson/issues/1>
 
 ## Session Info
 

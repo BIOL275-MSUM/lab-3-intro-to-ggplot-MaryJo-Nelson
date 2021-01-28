@@ -109,7 +109,7 @@ bird_data                  # print the data in the console
 #> 6 Gambel's Quail         148
 #> # … with 37 more rows
 
-# Bird Abundance Histogram ------------------------------------------------
+# Bird Abundance Histogram step by step------------------------------------------------
 
 ggplot(data = bird_data)
 
@@ -126,6 +126,8 @@ ggplot(data = bird_data) +
 ggplot(data = bird_data) +
   geom_histogram(mapping = aes(x = abundance), binwidth = 50,
                  boundary = 0, closed = "left")
+
+# Final histogram
 
 ggplot(data = bird_data) +
   geom_histogram(mapping = aes(x = abundance), binwidth = 50,
