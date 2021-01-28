@@ -1,13 +1,12 @@
----
-title: "Lab 3: Introduction to ggplot"
-author: "MaryJo Nelson"
-date: "`r format(Sys.Date())`"
-output: github_document
----
+Lab 3: Introduction to ggplot
+================
+MaryJo Nelson
+2021-01-28
 
 > INSTRUCTIONS: REMOVE THIS LINE AND REPLACE \_\_\_\_ WITH YOUR OWN TEXT
 
-Welcome to my Lab 2 repository for Quantitative Biology BIOL 275 at MSUM.
+Welcome to my Lab 2 repository for Quantitative Biology BIOL 275 at
+MSUM.
 
 ## Lab objectives
 
@@ -27,17 +26,18 @@ The objectives of this lab are:
 
 -   Create a graph showing the distribution of a single variable
 
-    -   Create a bar chart for a categorical variable using the `geom_col()` and `geom_bar()` functions
+    -   Create a bar chart for a categorical variable using
+        the `geom_col()` and `geom_bar()` functions
 
     -   Arrange the categories in a bar chart by frequency
 
-    -   Create a histogram for a numerical variable using the `geom_histogram()`function
+    -   Create a histogram for a numerical variable using
+        the `geom_histogram()`function
 
     -   Choose and set appropriate histogram bin widths
 
 -   Set the image width for an R Markdown code chunk
 
-  
 Repository contents
 
 The repository contains the following scripts:
