@@ -1,6 +1,6 @@
 ---
 title: "Lab 3: Introduction to ggplot"
-author: "___"
+author: "MaryJo Nelson"
 date: "`r format(Sys.Date())`"
 output: github_document
 ---
@@ -13,8 +13,21 @@ Welcome to my Lab 2 repository for Quantitative Biology BIOL 275 at MSUM.
 
 The objectives of this lab are:
 
-- ___
-- ___
+-Understand the layered grammar of graphics:
+
+-Create a blank plot using the ggplot() function
+  -Add geometric objects using the geom_*() family of functions
+  -Define an aesthetic mapping for a project using the aes() function
+  -Apply a statistical transformation using the stat_*() family of functions
+  -Add labels to a ggplot using the labs() function
+  
+-Create a graph showing the distribution of a single variable
+  -Create a bar chart for a categorical variable using the geom_col() and geom_bar() functions
+  -Arrange the categories in a bar chart by frequency
+  -Create a histogram for a numerical variable using the geom_histogram() function
+  -Choose and set appropriate histogram bin widths
+  
+-Set the image width for an R Markdown code chunk
 
 ## Repository contents
 
