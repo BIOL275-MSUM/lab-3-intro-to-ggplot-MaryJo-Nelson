@@ -11,7 +11,7 @@ Instructions for this lab report can be found on [Your assignment section of Lab
 
 > A. Insert an R code chunk and create a graph depicting the frequency distribution of the 35 mass measurements. It should have legible text and appropriate axis labels.
 
-## Load Packages 
+## Load Packages
 
 ```{r}
 
@@ -19,7 +19,7 @@ library(tidyverse)
 
 ```
 
-## Load and Read Firefly Data 
+## Load and Read Firefly Data
 
 ```{r}
 
@@ -28,7 +28,7 @@ firefly_data
 
 ```
 
-## Histogram of firefly spermatophore mass measurements 
+## Histogram of firefly spermatophore mass measurements
 
 ```{r}
 
@@ -50,41 +50,19 @@ ggplot(data = firefly_data) +
 
 ```
 
-
 ## Questions about firefly data
 
 > B. What type of graph did you choose in part (A)? Why?
 
-```
-
-I chose to create a histogram because the data we were given had a numerical 
-variable. Histograms are better at showing the frequency distribution of 
-numererical data, whereas bar graphs are better for showing the frequency 
-distribution of categorical data.
-
-```
-
-
+*I chose to create a histogram because the data we were given had a numerical variable. Histograms are better at showing the frequency distribution of numerical data, whereas bar graphs are better for showing the frequency distribution of categorical data.*
 
 > C. Describe the shape of the frequency distribution. What are its main features?
 
-```
-
-The shape of the histogram is unimodal skewing right. There is one main 
-bell-shaped clump of data between 0.03mg and 0.10mg, with an additional 
-outlier at 0.17mg-0.18mg.
-
-```
-
+*The shape of the histogram is unimodal skewing right. There is one main bell-shaped clump of data between 0.03mg and 0.10mg, with an additional outlier at 0.17mg-0.18mg.*
 
 > D. What term would be used to describe the largest measurement in the frequency distribution? You can refer to the lecture slides, your notes, or the textbook.
 
-```
-
-Mode.
-
-```
-
+*Mode.*
 
 # Bird orders
 
@@ -101,7 +79,7 @@ birds <- ebird_taxonomy %>%           # start with the ebird_taxonomy data
 
 ## Read bird data
 
-``` {r}
+```{r}
 
 birds
 distinct(birds, scientific_name)
@@ -109,30 +87,15 @@ count(birds, order)
 
 ```
 
-
 ## Questions about bird data
 
 > E. How many bird species are in the new birds dataset? How did you find out?
 
-```
-
-There are 10,721 bird species in the dataset. I found this by creating a table of 
-distinct scientific names and there were a total of 10,721 rows, telling me that
-that is how many bird species there are.
-
-```
-
-
+*There are 10,721 bird species in the dataset. I found this by creating a table of distinct scientific names and there were a total of 10,721 rows, telling me that that is how many bird species there are.*
 
 > H. How many orders are there? You can get this right by counting on the graph, but you will only get full points if you use some code to figure it out.
 
-```
-
-There are 41 orders. I found this by creating a contingency table of the orders and
-their frequency. There were 41 rows, telling me that there are 41 distinct orders.
-
-```
-
+*There are 41 orders. I found this by creating a contingency table of the orders and their frequency. There were 41 rows, telling me that there are 41 distinct orders.*
 
 ## Bird Order Bar Graph
 
@@ -157,23 +120,17 @@ ggplot(data = birds) +
 
 ```
 
-
 > G. What kind of graph did you create? Why?
 
-```
-
-I created a bar graph because the dataset we are trying to represent contains 
-a categorical variable.
-
-```
+*I created a bar graph because the dataset we are trying to represent contains a categorical variable.*
 
 \_\_\_
 
 ## Links to peer review
 
-I reviewed Beau Ayers's lab report at this URL: https://github.com/BIOL275-MSUM/lab-3-intro-to-ggplot-BeauAyers/issues/1
+I reviewed Beau Ayers's lab report at this URL: <https://github.com/BIOL275-MSUM/lab-3-intro-to-ggplot-BeauAyers/issues/1>
 
-Beau Ayers reviewed my lab report at this URL: https://github.com/BIOL275-MSUM/lab-3-intro-to-ggplot-MaryJo-Nelson/issues/1
+Beau Ayers reviewed my lab report at this URL: <https://github.com/BIOL275-MSUM/lab-3-intro-to-ggplot-MaryJo-Nelson/issues/1>
 
 ## Session Info
 

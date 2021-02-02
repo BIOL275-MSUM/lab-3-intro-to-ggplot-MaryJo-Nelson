@@ -1,7 +1,7 @@
 Lab 3 Report
 ================
 MaryJo Nelson
-2021-01-28
+2021-02-02
 
 Instructions for this lab report can be found on [Your assignment
 section of Lab Assignment 3 Introduction to
@@ -88,26 +88,23 @@ ggplot(data = firefly_data) +
 
 > B. What type of graph did you choose in part (A)? Why?
 
-
-    I chose to create a histogram because the data we were given had a numerical 
-    variable. Histograms are better at showing the frequency distribution of 
-    numererical data, whereas bar graphs are better for showing the frequency 
-    distribution of categorical data.
+*I chose to create a histogram because the data we were given had a
+numerical variable. Histograms are better at showing the frequency
+distribution of numerical data, whereas bar graphs are better for
+showing the frequency distribution of categorical data.*
 
 > C. Describe the shape of the frequency distribution. What are its main
 > features?
 
-
-    The shape of the histogram is unimodal skewing right. There is one main 
-    bell-shaped clump of data between 0.03mg and 0.10mg, with an additional 
-    outlier at 0.17mg-0.18mg.
+*The shape of the histogram is unimodal skewing right. There is one main
+bell-shaped clump of data between 0.03mg and 0.10mg, with an additional
+outlier at 0.17mg-0.18mg.*
 
 > D. What term would be used to describe the largest measurement in the
 > frequency distribution? You can refer to the lecture slides, your
 > notes, or the textbook.
 
-
-    Mode.
+*Mode.*
 
 # Bird orders
 
@@ -197,18 +194,17 @@ count(birds, order)
 > E. How many bird species are in the new birds dataset? How did you
 > find out?
 
-
-    There are 10,721 bird species in the dataset. I found this by creating a table of 
-    distinct scientific names and there were a total of 10,721 rows, telling me that
-    that is how many bird species there are.
+*There are 10,721 bird species in the dataset. I found this by creating
+a table of distinct scientific names and there were a total of 10,721
+rows, telling me that that is how many bird species there are.*
 
 > H. How many orders are there? You can get this right by counting on
 > the graph, but you will only get full points if you use some code to
 > figure it out.
 
-
-    There are 41 orders. I found this by creating a contingency table of the orders and
-    their frequency. There were 41 rows, telling me that there are 41 distinct orders.
+*There are 41 orders. I found this by creating a contingency table of
+the orders and their frequency. There were 41 rows, telling me that
+there are 41 distinct orders.*
 
 ## Bird Order Bar Graph
 
@@ -238,9 +234,8 @@ ggplot(data = birds) +
 
 > G. What kind of graph did you create? Why?
 
-
-    I created a bar graph because the dataset we are trying to represent contains 
-    a categorical variable.
+*I created a bar graph because the dataset we are trying to represent
+contains a categorical variable.*
 
 \_\_\_
 
@@ -270,7 +265,7 @@ sessioninfo::session_info()
     ##  collate  en_US.UTF-8                 
     ##  ctype    en_US.UTF-8                 
     ##  tz       America/Chicago             
-    ##  date     2021-01-28                  
+    ##  date     2021-02-02                  
     ## 
     ## ─ Packages ───────────────────────────────────────────────────────────────────
     ##  package     * version date       lib source        
