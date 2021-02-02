@@ -19,6 +19,8 @@ count(firefly_data, spermatophoreMass)
 
 
 # Bar Graph of firefly spermatophore mass measurements --------------------
+  # I just did this for fun/practice, it is not in the report because it is not
+  # the correct type of graph for this data
 
 ggplot(data = firefly_data) +
   geom_bar(mapping = aes(x = spermatophoreMass), fill = "#92C7C7") +
@@ -33,16 +35,17 @@ ggplot(data = firefly_data) +
     axis.ticks.x = element_blank())
 
 # Histogram of firefly spermatophore mass measurements ----------------------------------
+  # This is the graph I used in the report
 
 ggplot(data = firefly_data) +
-  geom_histogram(mapping = aes(x = spermatophoreMass), binwidth = 0.01, 
+  geom_histogram(mapping = aes(x = spermatophoreMass), binwidth = 0.015, 
                  boundary = 0, closed = "left", fill = "#92C7C7", 
                  color = "black") +
   labs(x = "Mass of Spermatophore (mg)", y = "Frequency (number of individual fireflies)", 
        title = "Frequency distribution of spermatophore mass from a sample of 35 male fireflies") +
-  scale_y_continuous(breaks = seq(0, 10, 1), limits = c(0, 10), 
+  scale_y_continuous(breaks = seq(0, 12, 1), limits = c(0, 12), 
                      expand = expansion(mult = 0)) +
-  scale_x_continuous(breaks = seq(0.03, 0.18, 0.01), limits = c(0.03, 0.18)) +
+  scale_x_continuous(breaks = seq(0.03, 0.18, 0.015), limits = c(0.03, 0.18)) +
   theme_classic() +
   theme(
     axis.title = element_text(face = "bold"),

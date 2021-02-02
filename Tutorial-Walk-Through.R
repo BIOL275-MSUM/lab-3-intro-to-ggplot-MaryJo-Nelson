@@ -7,56 +7,22 @@ library(tidyverse)
 # Deaths from Tigers ------------------------------------------------------
 
 tiger_data <- read_csv("https://whitlockschluter.zoology.ubc.ca/wp-content/data/chapter02/chap02e2aDeathsFromTigers.csv")
-#> 
-#> ── Column specification ────────────────────────────────────────────────────────
-#> cols(
-#>   person = col_double(),
-#>   activity = col_character()
-#> )
+
 
 tiger_data                  # print the data in the console
-#> # A tibble: 88 x 2
-#>   person activity             
-#>    <dbl> <chr>                
-#> 1      1 Disturbing tiger kill
-#> 2      2 Forest products      
-#> 3      3 Grass/fodder         
-#> 4      4 Fuelwood/timber      
-#> 5      5 Grass/fodder         
-#> 6      6 Forest products      
-#> # … with 82 more rows
+
 
 distinct(tiger_data, activity)
-#> # A tibble: 9 x 1
-#>   activity             
-#>   <chr>                
-#> 1 Disturbing tiger kill
-#> 2 Forest products      
-#> 3 Grass/fodder         
-#> 4 Fuelwood/timber      
-#> 5 Fishing              
-#> 6 Herding              
-#> 7 Sleeping in house    
-#> 8 Walking              
-#> 9 Toilet
+
 
 
 # Tiger Deaths Contingency Table ------------------------------------------
 
 count(tiger_data, activity)
-#> # A tibble: 9 x 2
-#>   activity                  n
-#> * <chr>                 <int>
-#> 1 Disturbing tiger kill     5
-#> 2 Fishing                   8
-#> 3 Forest products          11
-#> 4 Fuelwood/timber           5
-#> 5 Grass/fodder             44
-#> 6 Herding                   7
-#> # … with 3 more rows
 
 
-# Tiger Deaths Bar Graph --------------------------------------------------
+
+# Tiger Deaths Bar Graph building blocks --------------------------------------------------
 
 ggplot(data = tiger_data)
 
@@ -72,6 +38,8 @@ ggplot(data = tiger_data) +
 ggplot(data = tiger_data) +
   geom_bar(mapping = aes(x = fct_infreq(activity)), fill = "#C5351B") +
   labs(x = "Activity", y = "Frequency (number of people)")
+
+# Final Tiger Deaths Bar Graph
 
 ggplot(data = tiger_data) +
   geom_bar(mapping = aes(x = fct_infreq(activity)), fill = "#C5351B", 
@@ -90,24 +58,10 @@ ggplot(data = tiger_data) +
 # Bird Abundances ---------------------------------------------------------
 
 bird_data <- read_csv("https://whitlockschluter.zoology.ubc.ca/wp-content/data/chapter02/chap02e2bDesertBirdAbundance.csv")
-#> 
-#> ── Column specification ────────────────────────────────────────────────────────
-#> cols(
-#>   species = col_character(),
-#>   abundance = col_double()
-#> )
+
 
 bird_data                  # print the data in the console
-#> # A tibble: 43 x 2
-#>   species          abundance
-#>   <chr>                <dbl>
-#> 1 Black Vulture           64
-#> 2 Turkey Vulture          23
-#> 3 Harris's Hawk            3
-#> 4 Red-tailed Hawk         16
-#> 5 American Kestrel         7
-#> 6 Gambel's Quail         148
-#> # … with 37 more rows
+
 
 # Bird Abundance Histogram step by step------------------------------------------------
 
@@ -127,7 +81,7 @@ ggplot(data = bird_data) +
   geom_histogram(mapping = aes(x = abundance), binwidth = 50,
                  boundary = 0, closed = "left")
 
-# Final histogram
+# Final Bird Abundance Histogram
 
 ggplot(data = bird_data) +
   geom_histogram(mapping = aes(x = abundance), binwidth = 50,
