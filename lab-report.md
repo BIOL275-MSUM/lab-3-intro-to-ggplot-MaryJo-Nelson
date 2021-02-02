@@ -244,7 +244,10 @@ contains a categorical variable.*
 I reviewed Beau Ayers’s lab report at this URL:
 <https://github.com/BIOL275-MSUM/lab-3-intro-to-ggplot-BeauAyers/issues/1>
 
-Beau Ayers reviewed my lab report at this URL:
+I reviewed Amara Miller’s lab report at this URL:
+<https://github.com/BIOL275-MSUM/lab-3-intro-to-ggplot-milleramara4/issues/1>
+
+Beau Ayers and Amara Miller reviewed my lab report at this URL:
 <https://github.com/BIOL275-MSUM/lab-3-intro-to-ggplot-MaryJo-Nelson/issues/1>
 
 ## Session Info
